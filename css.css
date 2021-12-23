@@ -1,0 +1,107 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+  }
+  body{
+    height:100%;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-textura-papel-reciclado_118047-1783.jpg?size=626&ext=jpg);
+   background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #main{
+    padding: 2%;
+    width:100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "container container container"
+      "tribute-info tribute-info aside"
+      "img-div img-div aside";
+  }
+  .container{
+    color: #fff;
+    text-align:center;
+    grid-area:container;
+    background: #F2B70589;
+    padding:2%;
+    margin-bottom:2%;
+    box-shadow: 1px 1px 2px #591902a0,1px 1px 5px #591902a0,1px 1px 7px #591902a0 inset ;
+  }
+.container h1{
+  text-transform: uppercase;
+  margin-bottom: 2%;
+  text-shadow: 1px 1px 1px #591902a0,1px 2px 2px #591902a0,1px 3px 3px #591902a0,1px 4px 4px #591902a0;
+}
+.container p{
+  font-size: 1.2rem;
+}
+  #img-div{
+    grid-area:img-div;
+    padding: 2%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #591902a0,1px 1px 5px #591902a0,1px 1px 7px #591902a0 inset ;
+  }
+  #image{
+    width:60%;
+    object-fit: cover;
+    border-radius: 30%;
+    box-shadow: 1px 1px 1px #333,1px 1px 2px #333,1px 1px 3px #333,1px 1px 6px #333;
+  }
+#img-caption{
+  margin-top: 3%;
+  text-align:center;
+}
+  #tribute-info{
+    grid-area:tribute-info;
+    padding:5%;
+  }
+
+#tribute-info h3{
+  text-align: center;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 1px #333, 1px 1px 1px #333,1px 1px 1px #333;
+  margin-bottom: 2%;
+  color:#591902d0;
+  text-transform: uppercase;
+}
+#tribute-info ul {
+  display:flex;
+  gap: 3%;
+  list-style: none;
+  text-align: left;
+  
+}
+#tribute-info ul li {
+  padding: 2%;
+  box-shadow: 1px 1px 1px #333,1px 1px 2px #333;
+}
+#tribute-info ul li strong {
+  font-size:1.3rem;
+  text-transform:  uppercase;
+  color:#591902;
+}
+#tribute-link{
+  text-decoration:none;
+  font-weight:900;
+  color:#F2B705;
+}
+  .aside{
+    padding:2%;
+    display:flex;
+    flex-direction:column;
+    grid-area:aside;
+   border-bottom: 3px solid #F2B705;
+    border-right: 3px solid #F2B705;
+    height:auto;
+  }
+  .aside > img {
+    width:100%;
+    height:10rem;
+    object-fit: fill;
+    margin-top:3%;
+    box-shadow: 1px 1px 1px #333,1px 1px 2px #333;
+  }
